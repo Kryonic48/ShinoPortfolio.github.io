@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0c0d">
+<meta name="description" content="Shino K. Thomas — Video Editor,Sound Engineer.">
+<title>Shino K. Thomas — Video Editor,Sound Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070914;--panel:#0d1224;--panel2:#111a31;--text:#f7f6ff;--muted:#b5b8ce;--line:rgba(218,215,255,.16);--accent:#c8a7ff;--max:1180px}
+*{box-sizing:border-box;min-width:0}html{scroll-behavior:smooth;scroll-padding-top:90px;width:100%;max-width:100%;overflow-x:clip}body{margin:0;width:100%;max-width:100%;overflow-x:clip;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.nav-links,.project-meta,.footer-note{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.09em;font-size:.72rem}.eyebrow{color:var(--accent);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:24px;height:1px;background:var(--accent)}.site-header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(7,9,20,.82);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:border-color .25s}.site-header.scrolled{border-color:var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.06em;font-size:1.05rem}.brand span{color:var(--accent)}.nav-links{display:flex;gap:28px;color:#c8c8c3}.nav-links a:hover{color:var(--accent)}.nav-cta{border:1px solid var(--line);padding:10px 15px;border-radius:3px;font-size:.75rem;transition:.2s}.nav-cta:hover{background:var(--accent);color:#090a17;border-color:var(--accent)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 10px}
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;overflow:hidden;padding:145px 0 80px;border-bottom:1px solid var(--line)}.hero-image{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 42%,rgba(168,126,255,.28),transparent 38%),linear-gradient(90deg,rgba(7,9,20,.97) 0%,rgba(7,9,20,.82) 48%,rgba(7,9,20,.34) 100%),linear-gradient(0deg,#070914 0%,transparent 42%),url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=2200&q=85") center/cover no-repeat;opacity:.82;transform:scale(1.02)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:40px}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(3.6rem,9.2vw,8.2rem);line-height:.91;letter-spacing:-.085em;margin:24px 0 30px;font-weight:700;max-width:850px}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy{max-width:500px;color:#c3c3be;font-size:1.05rem}.hero-actions{display:flex;align-items:center;gap:22px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 19px;background:var(--accent);color:#090a17;font-weight:700;font-size:.85rem;border:1px solid var(--accent);border-radius:2px;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px);background:#dfd0ff}.text-link{border-bottom:1px solid #8d8e88;padding:7px 0;font-size:.86rem}.text-link:hover{color:var(--accent);border-color:var(--accent)}.hero-side{justify-self:end;max-width:260px;padding-bottom:8px}.hero-side .big-index{font-family:Manrope,sans-serif;font-size:5rem;line-height:1;color:rgba(255,255,255,.16);font-weight:800;letter-spacing:-.1em}.hero-side p{font-size:.88rem;color:#c4c4bf}.scroll-note{position:absolute;bottom:26px;left:max(24px,calc((100% - var(--max))/2));color:#b4b4ad;display:flex;align-items:center;gap:12px}.scroll-note span{height:36px;width:1px;background:var(--accent)}
+.section{padding:115px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px}.section h2{font-family:Manrope,sans-serif;font-size:clamp(2.6rem,5.4vw,5rem);letter-spacing:-.075em;line-height:1;margin:17px 0 0}.section-intro{max-width:390px;color:var(--muted);font-size:.95rem;margin:0}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;align-items:start}.about-statement{font-family:Manrope,sans-serif;font-size:clamp(1.7rem,3.3vw,3rem);letter-spacing:-.055em;line-height:1.2;margin:0}.about-statement span{color:var(--accent)}.about-copy{color:var(--muted);max-width:610px}.about-copy p{margin:0 0 18px}.fact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.fact{border-top:1px solid var(--line);padding-top:15px}.fact strong{display:block;font-family:Manrope,sans-serif;font-size:1.1rem}.fact span{font-size:.75rem;color:var(--muted)}
+.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.project-card{display:block;min-width:0}.project-visual{height:340px;position:relative;overflow:hidden;background:var(--panel2);border:1px solid var(--line)}.project-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.72);transition:transform .6s,filter .4s}.project-card:hover img{transform:scale(1.045);filter:saturate(1)}.project-visual:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(5,7,19,.72));pointer-events:none}.project-number{position:absolute;z-index:1;top:18px;left:18px;background:rgba(10,11,11,.65);border:1px solid rgba(255,255,255,.3);padding:7px 10px}.project-play{position:absolute;z-index:2;right:18px;bottom:18px;width:48px;height:48px;border:1px solid rgba(255,255,255,.65);border-radius:50%;display:grid;place-items:center;background:rgba(10,10,10,.22);font-size:1.1rem}.project-info{display:flex;justify-content:space-between;gap:15px;align-items:start;padding:17px 0 8px}.project-info h3{font-family:Manrope,sans-serif;font-size:1.35rem;letter-spacing:-.04em;margin:0}.project-info p{margin:5px 0 0;color:var(--muted);font-size:.86rem}.project-meta{color:var(--muted);text-align:right;white-space:nowrap}.project-hint{color:var(--muted);font-size:.78rem;margin-top:28px}
+.skills-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:80px}.skills-copy{color:var(--muted);max-width:360px}.skill-list{border-top:1px solid var(--line)}.skill{display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:18px;padding:19px 0;border-bottom:1px solid var(--line)}.skill .num{font-family:"DM Mono",monospace;color:var(--accent);font-size:.75rem}.skill h3{margin:0;font-size:1.02rem;font-weight:500}.skill p{margin:4px 0 0;color:var(--muted);font-size:.8rem}.skill .arrow{font-size:1.1rem;color:#777}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.service{background:var(--bg);padding:28px;min-height:220px;transition:background .25s}.service:hover{background:var(--panel)}.service-icon{width:40px;height:40px;border:1px solid var(--line);display:grid;place-items:center;color:var(--accent);margin-bottom:30px;font-size:1.1rem}.service h3{font-family:Manrope,sans-serif;font-size:1.15rem;margin:0 0 8px;letter-spacing:-.03em}.service p{color:var(--muted);font-size:.86rem;margin:0}
+.experience-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:80px}.experience-list{border-top:1px solid var(--line)}.experience-item{padding:22px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:130px 1fr;gap:24px}.experience-date{font-family:"DM Mono",monospace;font-size:.72rem;color:var(--accent);padding-top:5px}.experience-item h3{margin:0;font-size:1.05rem}.experience-item .company{color:var(--muted);font-size:.83rem;margin:4px 0 9px}.experience-item p{color:var(--muted);font-size:.86rem;margin:0}.contact-section{padding:130px 0 110px;position:relative;overflow:hidden}.contact-section:after{content:"S";position:absolute;right:4%;top:2%;font-family:Manrope,sans-serif;font-size:clamp(15rem,35vw,34rem);line-height:1;font-weight:800;color:rgba(200,167,255,.055);pointer-events:none}.contact-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr .65fr;gap:60px;align-items:end}.contact-section h2{font-size:clamp(3.4rem,8vw,7.6rem);max-width:800px}.contact-section h2 span{color:var(--accent)}.contact-side{color:var(--muted);max-width:330px}.contact-side p{margin-top:0}.contact-email{display:inline-block;font-size:1.05rem;border-bottom:1px solid var(--accent);padding-bottom:5px;margin:10px 0 22px}.contact-email:hover{color:var(--accent)}.contact-form{display:grid;gap:12px;margin-top:22px}.contact-form input,.contact-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:13px 14px;color:var(--text);outline:none;border-radius:2px}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent)}.contact-form textarea{min-height:90px;resize:vertical}.contact-form button{cursor:pointer;justify-self:start}.form-note{font-size:.72rem;color:var(--muted);margin:0}.footer{padding:25px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted)}.footer-note{font-size:.65rem}.back-top{color:var(--text)}.back-top:hover{color:var(--accent)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}::selection{background:var(--accent);color:#090a17}
+@media(max-width:800px){.wrap{width:min(100% - 36px,var(--max))}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:22px 24px 26px;background:#0a0e1e;border-bottom:1px solid var(--line);flex-direction:column;gap:20px}.nav-links.open{display:flex}.nav-cta{display:none}.hero{min-height:90svh;padding-top:120px}.hero-grid,.about-grid,.skills-layout,.experience-grid,.contact-grid{grid-template-columns:1fr;gap:36px}.hero h1{font-size:clamp(3.7rem,15vw,6.5rem)}.hero-side{justify-self:start;max-width:360px;display:flex;gap:20px;align-items:center}.hero-side .big-index{font-size:3.3rem}.hero-side p{margin:0}.scroll-note{left:18px}.section{padding:82px 0}.section-head{display:block;margin-bottom:34px}.section-intro{margin-top:20px}.project-grid{gap:28px}.project-visual{height:clamp(220px,55vw,340px)}.services-grid{grid-template-columns:1fr}.service{min-height:0;padding:24px}.service-icon{margin-bottom:20px}.fact-row{gap:8px}.experience-item{grid-template-columns:95px 1fr;gap:14px}.contact-section{padding:90px 0 70px}.contact-side{max-width:520px}.footer{align-items:flex-start;flex-direction:column}.project-info{display:block}.project-meta{text-align:left;margin-top:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Lavender atmosphere + smooth image pop on scroll */
+body{background:radial-gradient(ellipse at 8% 18%,rgba(104,92,190,.11),transparent 28%),radial-gradient(ellipse at 92% 55%,rgba(145,104,220,.10),transparent 30%),#070914}
+.site-header{background:rgba(7,9,20,.84)}
+.section,.contact-section{position:relative;isolation:isolate}
+.section:before,.contact-section:before{content:"";position:absolute;z-index:-1;pointer-events:none;width:min(70vw,780px);height:340px;left:-16%;top:12%;background:radial-gradient(ellipse,rgba(151,113,255,.12),transparent 68%);filter:blur(22px)}
+.section:nth-of-type(even):before{left:auto;right:-18%;top:28%;background:radial-gradient(ellipse,rgba(88,118,255,.13),transparent 68%)}
+.project-visual{background:#0d1224;box-shadow:0 14px 50px rgba(0,0,0,.18);transition:transform .65s cubic-bezier(.2,.75,.2,1),box-shadow .45s,border-color .35s}
+.project-card.reveal .project-visual{transform:translateY(24px) scale(.965);opacity:0;transition:transform .8s cubic-bezier(.2,.75,.2,1),opacity .8s,box-shadow .45s,border-color .35s}
+.project-card.reveal.visible .project-visual{transform:translateY(0) scale(1);opacity:1;box-shadow:0 0 0 1px rgba(200,167,255,.08),0 22px 60px rgba(83,64,160,.18)}
+.project-card:hover .project-visual{border-color:rgba(200,167,255,.55);box-shadow:0 0 34px rgba(164,123,255,.18),0 24px 65px rgba(0,0,0,.35)}
+.project-card:hover .project-visual img{transform:scale(1.055);filter:saturate(.9) contrast(1.04)}
+.hero .eyebrow,.section .eyebrow,.contact-section .eyebrow{color:#d6c3ff}
+.btn{box-shadow:0 0 24px rgba(200,167,255,.13)}
+.btn:hover{background:#dfd0ff}
+.fact,.skill-list,.experience-list{border-color:rgba(218,215,255,.18)}
+.project-number{color:#f7f6ff;border-color:rgba(218,215,255,.3)}
+::selection{background:#c8a7ff;color:#090a17}
+@media(prefers-reduced-motion:reduce){.project-card.reveal .project-visual,.project-card.reveal.visible .project-visual{opacity:1;transform:none}}
+
+
+/* Layout fix: prevent unwanted blank space on the right / horizontal overflow */
+main,header,footer,section,.wrap,.hero-grid,.about-grid,.skills-layout,
+.experience-grid,.contact-grid,.project-grid,.services-grid{min-width:0;max-width:100%}
+img,video,iframe{max-width:100%}
+@media(max-width:800px){
+  .wrap{width:calc(100% - 36px);margin-inline:auto}
+  .hero-grid,.about-grid,.skills-layout,.experience-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .section-head{min-width:0}
+  .hero h1{overflow-wrap:anywhere}
+}
+
+</style>
+</head>
+<body>
+<header class="site-header" id="header">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Shino K. Thomas home">SHINO K THOMAS<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">MENU ☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#experience">Experience</a>
+    </nav>
+    <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-image" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Video editor · Sound Engineer</div>
+      <h1><br>Every pixel.<br>Everysound.<em> Intentional.</em></h1>
+      <p class="hero-copy">I’m Shino K. Thomas. I shape raw footage into considered stories through rhythm, colour, sound, and cinematic detail.</p>
+       </div>
+    <aside class="hero-side"><div class="big-index">01—</div><p>Thoughtful edits.<br>Purposeful storytelling.<br>Details that make a difference.</p></aside>
+  </div>
+  <div class="scroll-note mono"><span></span> SCROLL TO EXPLORE</div>
+</section>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="eyebrow">01 / A little about me</div><h2>Behind the cut.</h2></div><p class="section-intro">Good editing isn’t just about what you see. It’s about what you feel, and what stays with you afterwards.</p></div>
+    <div class="about-grid reveal">
+      <p class="about-statement">I turn footage into <span>stories worth watching.</span></p>
+      <div class="about-copy">
+        <p>I’m Shino K. Thomas, a video editor drawn to the craft of visual storytelling.I Use latest Video Editing Software and Hardware for Efficiency. I care about pacing, atmosphere, sound, and the small choices that give a video its own character.</p>
+        <p>I’m looking for opportunities to collaborate with creative teams, learn from ambitious projects, and bring a thoughtful eye to every edit—from the first assembly to the final export.</p>
+        <div class="fact-row"><div class="fact"><strong>Story first</strong><span>Purpose-led editing</span></div><div class="fact"><strong>Detail driven</strong><span>Polished finishing</span></div><div class="fact"><strong>Team minded</strong><span>Open collaboration</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="eyebrow">02 / The toolkit</div><h2>Craft & technique.</h2></div><p class="section-intro">A focused set of editing strengths, ready to be tailored to the software and workflows you use.</p></div>
+    <div class="skills-layout reveal"><p class="skills-copy">From the first rough cut to the final delivery, every stage is a chance to make the story clearer and the viewing experience stronger.</p>
+      <div class="skill-list">
+        <div class="skill"><span class="num">01</span><div><h3>Video editing & pacing</h3><p>Structure, continuity, timing, and clean transitions</p></div><span class="arrow">↗</span></div>
+        <div class="skill"><span class="num">02</span><div><h3>Colour grading & correction</h3><p>Consistent tones, cinematic mood, balanced contrast</p></div><span class="arrow">↗</span></div>
+        <div class="skill"><span class="num">03</span><div><h3>Sound & music sync</h3><p>Audio balance, sound design, rhythm, and impact</p></div><span class="arrow">↗</span></div>
+        <div class="skill"><span class="num">04</span><div><h3>Titles & motion graphics</h3><p>Typography, simple animation, and visual polish</p></div><span class="arrow">↗</span></div>
+        <div class="skill"><span class="num">05</span><div><h3>Sound Engineering & Audio Production</h3><p>Audio recording, mixing and mastering, sound design, and professional audio enhancement.</p></div><span class="arrow">↗</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="eyebrow">04 / What I can bring</div><h2></h2></div><p class="section-intro">Editing support for different formats, audiences, and creative goals.</p></div>
+    <div class="services-grid reveal">
+      <article class="service"><div class="service-icon">✳</div><h3>Cinematic edits</h3><p>Music-led sequences, mood-driven cuts, and story-focused finishing.</p></article>
+      <article class="service"><div class="service-icon">◫</div><h3>Social media videos</h3><p>Short-form edits designed for a clear hook, strong pace, and mobile viewing.</p></article>
+      <article class="service"><div class="service-icon">↗</div><h3>Promotional content</h3><p>Brand, product, and event videos that communicate the key message.</p></article>
+      <article class="service"><div class="service-icon">◉</div><h3>Colour & finishing</h3><p>Visual consistency, colour correction, grading, and final polish.</p></article>
+      <article class="service"><div class="service-icon">♫</div><h3>Audio & music sync</h3><p>Thoughtful music selection, timing, and clean audio transitions.</p></article>
+      <article class="service"><div class="service-icon">▤</div><h3>Content repurposing</h3><p>Adapting a main edit into useful cuts and multiple aspect ratios.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="eyebrow">05 / Experience</div>10 Years of Experience</h2></div><p class="section-intro">With 10 years of experience in video editing and creative production, I bring a cinematic approach to every project. I also own a well-equipped audio recording studio, offering a dedicated space for high-quality audio recording and production.</p></div>
+    <div class="experience-grid reveal"><p class="skills-copy">Every project is an opportunity to sharpen the craft, solve a visual problem, and make the next cut better than the last.</p>
+      <div class="experience-list">
+        <div class="experience-item"><div class="experience-date">ADD DATES</div><div><h3>Video Editor</h3><div class="company">Company / Freelance / Personal projects</div><p>Describe the kind of videos you edited, the tools you used, and the contribution you made. Replace this template with your real experience.</p></div></div>
+        <div class="experience-item"><div class="experience-date">ADD DATES</div><div><h3>Creative Projects / Learning</h3><div class="company">Independent practice or course</div><p>Highlight relevant practice, collaborations, coursework, or personal edits that demonstrate your editing skills.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-section" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal"><div class="eyebrow">06 / Contact</div><h2>Have a story?<br><span>Let’s cut to it.</span></h2><a class="btn" href="mailto:your.email@example.com?subject=Video%20Editor%20Opportunity">GET IN TOUCH ↗</a></div>
+    <div class="contact-side reveal"><p>I’m open to hearing about video editing roles, creative teams, and projects where thoughtful storytelling matters.</p><a class="contact-email" href="mailto:your.email@example.com">squbemedia@gmail.com</a>
+      <form class="contact-form" id="contactForm">
+        <input id="senderName" type="text" placeholder="Your name" aria-label="Your name" required>
+        <input id="senderEmail" type="email" placeholder="Your email" aria-label="Your email" required>
+        <textarea id="senderMessage" placeholder="Tell me a little about the opportunity..." aria-label="Your message" required></textarea>
+        <button class="btn" type="submit">PREPARE EMAIL ↗</button>
+        <p class="form-note">Opens your email app with a pre-filled message. Update the placeholder email address first.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer wrap"><div class="brand">SHINO K.THOMAS<span>.</span></div><div class="footer-note">© <span id="year"></span> SHINO K. THOMAS · VIDEO EDITOR · SOUND ENGINEER</div><a class="back-top mono" href="#home">BACK TO TOP ↑</a></footer>
+<script>
+const header=document.getElementById('header');
+const navLinks=document.getElementById('navLinks');
+const menuToggle=document.getElementById('menuToggle');
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>20));
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'CLOSE ×':'MENU ☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='MENU ☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('senderName').value.trim();const email=document.getElementById('senderEmail').value.trim();const message=document.getElementById('senderMessage').value.trim();const subject=encodeURIComponent('Video editing opportunity');const body=encodeURIComponent(`Hi Shino,\n\n${message}\n\nBest,\n${name}\n${email}`);window.location.href=`mailto:your.email@example.com?subject=${subject}&body=${body}`});
+</script>
+</body>
+</html>
